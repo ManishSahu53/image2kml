@@ -2,12 +2,9 @@
 This python program converts image's exif data to kml or ply which can be viewed in gogole earth and cloud compare/ Meshlab. It read coordinate information stored in exif data of image.
 
 # Dependencies
-1. numpy
-2. pexif (To be installed seperately)
-3. simplekml
-4. Tkinter
-5. plyfile
-6. utm
+1. exifread
+2. simplekml
+3. Tkinter
 
 # How to run
 
@@ -31,20 +28,8 @@ git checkout develop
 3. Once installed correctly, you are ready to install dependencies.
     * To install maximum dependencies at once, simply type
         > python -m pip install -r requirements.txt
-    * To install pexif, which read and write exif data to images, download pexif from this link as zip [pexif](https://github.com/mcbridejc/pexif.git) and extract it or if you have git then clone it using following link
-        ```
-        git clone https://github.com/mcbridejc/pexif.git
-        ```
-    * After download or cloning, open cmd and change directory to folder where it is downloaded or cloned. To change change directory see **Point 6**
-    * After changing directory to folder where it is downloaded (you must a setup.py file inside it), type 
-        ```
-        python setup.py build
-        python setup.py install
-        ```
-            
-4. Dependencies list is given above, to install them open cmd and type 
-    > python -m pip install utm
-5. This will install utm library in python. Similarly install all the other required libraries.
+
+5. This will install exifread library in python. Similarly install all the other required libraries.
 6. Once all the libraries are installed, you are ready to run im2kml program. Open cmd and go to folder where **im2kml.py** is downloaded.
 7. Copy its location and open command prompt (cmd). To go to the folder for example -  **D:/python** , type in cmd as follows
     ```
